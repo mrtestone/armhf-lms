@@ -17,9 +17,10 @@ Ports to map:
 90907tcp
 
 example run:
-docker run -d \
+```docker run -d \
   -p 9080:9080 \
   -p 9000:9000 \
   -p 3483:3483 \
   -p 3483:3483/udp \
   mrtestone/rpi-lms:7.9.1
+```
