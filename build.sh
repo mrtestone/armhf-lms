@@ -2,8 +2,8 @@
 
 
 # lms image tag
-VERSION=7.8.1
-DOCKERHUBUSER=heziegl
+VERSION=7.9.1
+DOCKERHUBUSER=mrtestone
 
 # docker image to build
 IMAGE_NAME=$DOCKERHUBUSER/rpi-lms:$VERSION
