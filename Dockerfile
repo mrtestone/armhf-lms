@@ -1,17 +1,15 @@
 FROM resin/rpi-raspbian:wheezy
-MAINTAINER Heiko Ziegler, https://github.com/heziegl
+MAINTAINER Piotr Gburzynski, https://github.com/mrtestone
 
 
 RUN     apt-get update && \
         apt-get -y install perl adduser iproute iputils-ping curl wget faad flac lame sox
 
 
-ENV    SQUEEZE_VOL_PERSIST /var/lib/squeezeboxserver
-ENV    SQUEEZE_VOL_LOG /var/log/squeezeboxserver
-
-ENV 	LANG C.UTF-8
-#ENV 	LMS_URL http://downloads.slimdevices.com/nightly/7.9/sc/3a5fe78/logitechmediaserver_7.9.0~1456927571_all.deb
-ENV	LMS_URL http://downloads.slimdevices.com/nightly/7.8/sc/3c71ddd/logitechmediaserver_7.8.1~1458035672_all.deb
+ENV    SQUEEZE_VOL_PERSIST=/var/lib/squeezeboxserver \
+	SQUEEZE_VOL_LOG=/var/log/squeezeboxserver \
+	LANG=C.UTF-8 \
+	LMS_URL=http://downloads.slimdevices.com/LogitechMediaServer_v7.9.1/logitechmediaserver_7.9.1_arm.deb
 
 RUN	curl -Lf -o /tmp/lms.deb $LMS_URL && \
 	dpkg -i /tmp/lms.deb && \
