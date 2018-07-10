@@ -1,4 +1,4 @@
-# Docker Container: Logitech Media Server for Raspberry Pi
+# Docker Container: Logitech Media Server for armhf (Raspberry Pi, ...)
 
 As previous repo is not updated anymore, this is meant to be a fork for the latest version of the LMS.
 
