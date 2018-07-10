@@ -1,7 +1,7 @@
 #!/bin/sh
 
-VERSION=7.8.1
-DOCKERHUBUSER=heziegl
+VERSION=7.9.1
+DOCKERHUBUSER=mrtestone
 
 sudo docker run -d \
 		-p 9000:9000 \
