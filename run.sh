@@ -2,6 +2,7 @@
 
 VERSION=7.9.1
 DOCKERHUBUSER=mrtestone
+REPONAME=armhf-lms
 
 sudo docker run -d \
 		-p 9000:9000 \
@@ -14,4 +15,4 @@ sudo docker run -d \
 		-v $(pwd)/vol_lms_log:/var/log/squeezeboxserver \
 		-v $(pwd)/vol_lms_media:/media \
 		--name="lms" \
-		$DOCKERHUBUSER/rpi-lms:$VERSION
+		$DOCKERHUBUSER/$REPONAME:$VERSION
