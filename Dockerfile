@@ -3,7 +3,7 @@ MAINTAINER Piotr Gburzynski, https://github.com/mrtestone
 
 
 RUN     apt-get update && \
-        apt-get -y install perl adduser iproute iputils-ping curl wget faad flac lame sox
+        apt-get -y install perl adduser iproute iputils-ping curl wget faad flac lame sox libio-socket-ssl-perl
 
 
 ENV    SQUEEZE_VOL_PERSIST=/var/lib/squeezeboxserver \
