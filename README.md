@@ -23,5 +23,5 @@ docker run -d \
   -p 9000:9000 \
   -p 3483:3483 \
   -p 3483:3483/udp \
-  mrtestone/rpi-lms:7.9.1
+  mrtestone/armhf-lms:7.9.1
 ```
