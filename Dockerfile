@@ -9,7 +9,7 @@ RUN     apt-get update && \
 ENV    SQUEEZE_VOL_PERSIST=/var/lib/squeezeboxserver \
 	SQUEEZE_VOL_LOG=/var/log/squeezeboxserver \
 	LANG=C.UTF-8 \
-	LMS_URL=http://downloads.slimdevices.com/LogitechMediaServer_v7.9.1/logitechmediaserver_7.9.1_arm.deb
+	LMS_URL=http://downloads.slimdevices.com/nightly/7.9/sc/b7921c643967d891590e9c120464f3101fd04d48/logitechmediaserver_7.9.2~1561089896_arm.deb
 
 RUN	curl -Lf -o /tmp/lms.deb $LMS_URL && \
 	dpkg -i /tmp/lms.deb && \

@@ -1,7 +1,7 @@
 #!/bin/sh
 
-VERSION=7.9.1
-DOCKERHUBUSER=mrtestone
+VERSION=7.9.2-1561089896
+DOCKERHUBUSER=baztian
 REPONAME=armhf-lms
 
 sudo docker run -d \
