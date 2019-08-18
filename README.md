@@ -14,12 +14,12 @@ Ports to map:
 3483/tcp
 3483/udp
 9000/tcp
-90907tcp
+9090/tcp
 
 example run:
 ```
 docker run -d \
-  -p 9080:9080 \
+  -p 9090:9090 \
   -p 9000:9000 \
   -p 3483:3483 \
   -p 3483:3483/udp \
