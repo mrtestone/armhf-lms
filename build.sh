@@ -2,7 +2,7 @@
 
 
 # lms image tag
-VERSION=7.9.1
+VERSION=7.9.2
 DOCKERHUBUSER=mrtestone
 REPONAME=armhf-lms
 
