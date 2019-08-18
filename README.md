@@ -2,9 +2,9 @@
 
 As previous repo is not updated anymore, this is meant to be a fork for the latest version of the LMS.
 
-Current version LMS: 7.9.1
+Current version LMS: 7.9.2 nightly
 
-Based on https://github.com/heziegl/rpi-lms
+Based on https://github.com/mrtestone/armhf-lms
 
 Folders to map (for permanent data):
 /var/log/squeezeboxserver
@@ -23,5 +23,5 @@ docker run -d \
   -p 9000:9000 \
   -p 3483:3483 \
   -p 3483:3483/udp \
-  mrtestone/armhf-lms:7.9.1
+  mrtestone/armhf-lms
 ```

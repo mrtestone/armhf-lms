@@ -10,7 +10,7 @@ REPONAME=armhf-lms
 IMAGE_NAME=$DOCKERHUBUSER/$REPONAME:$VERSION
 
 # build runtime
-sudo docker build -t $IMAGE_NAME .
+docker build -t $IMAGE_NAME .
 
 # push to docker hub
-sudo docker push $IMAGE_NAME
+docker push $IMAGE_NAME

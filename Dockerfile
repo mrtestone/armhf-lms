@@ -7,11 +7,10 @@ RUN     apt-get update && \
         apt-get -y install perl adduser iproute iputils-ping curl wget faad flac lame sox libio-socket-ssl-perl
 
 
-ENV	SQUEEZE_VOL_PERSIST=/var/lib/squeezeboxserver
-ENV	SQUEEZE_VOL_LOG=/var/log/squeezeboxserver
-ENV	LANG=C.UTF-8
-#ENV	LMS_URL=http://downloads.slimdevices.com/LogitechMediaServer_v7.9.1/logitechmediaserver_7.9.1_arm.deb
-ENV	LMS_URL=http://downloads-origin.slimdevices.com/nightly/7.9/sc/25f77d7bd57a9ea70a4cf4a6b5be974849fd2a05/logitechmediaserver_7.9.2~1565967976_all.deb
+ENV    SQUEEZE_VOL_PERSIST=/var/lib/squeezeboxserver \
+	SQUEEZE_VOL_LOG=/var/log/squeezeboxserver \
+	LANG=C.UTF-8 \
+	LMS_URL=http://downloads.slimdevices.com/nightly/7.9/sc/b7921c643967d891590e9c120464f3101fd04d48/logitechmediaserver_7.9.2~1561089896_arm.deb
 
 RUN	curl -Lf -o /tmp/lms.deb $LMS_URL && \
 	dpkg -i /tmp/lms.deb && \
