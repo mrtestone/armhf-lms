@@ -1,5 +1,5 @@
-#FROM resin/rpi-raspbian:jessie
-FROM resin/rpi-raspbian:wheezy
+FROM resin/rpi-raspbian:jessie
+#FROM resin/rpi-raspbian:wheezy
 MAINTAINER Piotr Gburzynski, https://github.com/mrtestone
 
 
